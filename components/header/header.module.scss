@@ -1,0 +1,39 @@
+// @import '/app/globals.css';
+
+.header {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .navMenu {
+    // font-size: 18px;
+
+    .menuTrigger {
+      cursor: pointer;
+    }
+
+    // .navMenuItem {
+    //  max-height: 36px;
+    //   height: 100%;
+    // }
+
+    .menuLink {
+      line-height: 20px;
+      padding: 8px 16px;
+    }
+
+    .menuContent {
+      width: max-content;
+      word-break: break-all;
+      .pageLink {
+        font-size: 16px;
+      }
+    }
+  }
+}

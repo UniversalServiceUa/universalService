@@ -9,10 +9,10 @@ const juraFont = Jura({
   subsets: ["latin"],
 });
 
-const ocrABtFont = OcrFont({
-  src: "../assets/fonts/OCR-A-BT.ttf",
-  display: "swap",
-});
+// const ocrABtFont = OcrFont({
+//   src: "../assets/fonts/OCR-A-BT.ttf",
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Universal Service",
