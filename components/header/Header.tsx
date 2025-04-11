@@ -6,7 +6,6 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { NavigationMenuTrigger } from "@radix-ui/react-navigation-menu";
-import clsx from "clsx";
 import cl from "./header.module.scss";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -54,7 +53,7 @@ const Header = () => {
           <NavigationMenuItem className={cl.navMenuItem}>
             <NavigationMenuTrigger
               className={cn(
-                "group inline-flex h-9 w-max items-center justify-center rounded-md text-background px-4 py-2 text-lg font-semi-bold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-accent-foreground data-[state=open]:bg-accent/50 data-[state=open]:hover:bg-accent data-[state=open]:focus:bg-accent group",
+                "group inline-flex h-9 w-max items-center justify-center rounded-md text-background px-4 py-2 text-lg font-bold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-accent-foreground data-[state=open]:bg-accent/50 data-[state=open]:hover:bg-accent data-[state=open]:focus:bg-accent group",
                 cl.menuTrigger
               )}
             >
@@ -95,10 +94,7 @@ const Header = () => {
           <NavigationMenuItem className={cn(cl.navMenuItem)}>
             <NavigationMenuLink
               asChild
-              className={cn(
-                "font-semi-bold text-lg text-background ",
-                cl.menuLink
-              )}
+              className={cn("font-bold text-lg text-background ", cl.menuLink)}
             >
               <Link href={"/contacts"}>Команда</Link>
             </NavigationMenuLink>
@@ -106,10 +102,7 @@ const Header = () => {
           <NavigationMenuItem className={cn(cl.navMenuItem)}>
             <NavigationMenuLink
               asChild
-              className={cn(
-                "font-semi-bold text-lg text-background ",
-                cl.menuLink
-              )}
+              className={cn("font-bold text-lg text-background ", cl.menuLink)}
             >
               <Link href={"/contacts"}>Контакти</Link>
             </NavigationMenuLink>

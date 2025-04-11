@@ -3,6 +3,10 @@ import { Jura } from "next/font/google";
 import OcrFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import Footer from "@/components/footer/Footer";
+config.autoAddCss = false;
 
 const juraFont = Jura({
   variable: "--font-jura",
@@ -30,6 +34,7 @@ export default function RootLayout({
       <body className={`${juraFont.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
